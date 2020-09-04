@@ -6,3 +6,11 @@ function range(end) {
 
 console.log("first function:", range(5));
 
+//second function
+
+function isDivided(div1, div2, num){
+   return (num % div1 === 0) && (num % div2 === 0);      
+}
+console.log("second function:");
+const arrays = [[-12, 2, -6], [-12, 2, -5], [45, 1, 6], [45, 5, 15], [4, 1, 4], [15, -5, 3]];
+arrays.forEach(a => console.log(a + " ---> " + isDivided(a)));
