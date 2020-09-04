@@ -13,4 +13,14 @@ function isDivided(div1, div2, num){
 }
 console.log("second function:");
 const arrays = [[-12, 2, -6], [-12, 2, -5], [45, 1, 6], [45, 5, 15], [4, 1, 4], [15, -5, 3]];
-arrays.forEach(a => console.log(a + " ---> " + isDivided(a)));
+arrays.forEach(a => console.log(`${a} ====> ${isDivided(a)}`));
+
+//third function
+
+function capFirst(str) {
+    if (!str) return str;
+  
+    return str[0].toUpperCase() + str.slice(1);
+  }
+  const str = "work";
+  console.log(`third fucntion: ${str} ===> ${capFirst(str)}`);  
